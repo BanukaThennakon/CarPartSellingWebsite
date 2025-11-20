@@ -67,6 +67,40 @@
         </div>
     </nav>
 
+    <!-- Hero Slideshow -->
+    <section class="hero-slideshow">
+        <div class="slideshow-container">
+            <div class="slide active">
+                <img src="images/hero/slide1.jpg" alt="Slide 1" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%221200%22 height=%22400%22%3E%3Crect fill=%22%23e8f4f8%22 width=%221200%22 height=%22400%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23999%22 font-size=%2232%22%3ESlide 1%3C/text%3E%3C/svg%3E';">
+            </div>
+            <div class="slide">
+                <img src="images/hero/slide2.jpg" alt="Slide 2" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%221200%22 height=%22400%22%3E%3Crect fill=%22%23f5f5f5%22 width=%221200%22 height=%22400%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23999%22 font-size=%2232%22%3ESlide 2%3C/text%3E%3C/svg%3E';">
+            </div>
+            <div class="slide">
+                <img src="images/hero/slide3.jpg" alt="Slide 3" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%221200%22 height=%22400%22%3E%3Crect fill=%22%23e0f2f7%22 width=%221200%22 height=%22400%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23999%22 font-size=%2232%22%3ESlide 3%3C/text%3E%3C/svg%3E';">
+            </div>
+            
+            <!-- Navigation arrows -->
+            <button class="slide-arrow prev" onclick="changeSlide(-1)">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <button class="slide-arrow next" onclick="changeSlide(1)">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            
+            <!-- Dots indicator -->
+            <div class="slide-dots">
+                <span class="dot active" onclick="goToSlide(0)"></span>
+                <span class="dot" onclick="goToSlide(1)"></span>
+                <span class="dot" onclick="goToSlide(2)"></span>
+            </div>
+        </div>
+    </section>
+    
     <!-- Main Content -->
     <main class="main">
         <div class="container">
